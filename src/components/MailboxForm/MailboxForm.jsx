@@ -18,10 +18,10 @@ const MailboxForm = ({addBox}) => {
 
        const  newState = addBox(formData);
         console.log('newState:', newState)
-        setFormData(newState);
         setFormData(initialState)
+
         navigate('/mailboxes');
-    };
+    };  
 
     const handleChange = ({target}) => {
         setFormData({ ...formData, [target.name]: target.value});
