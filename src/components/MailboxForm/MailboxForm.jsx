@@ -17,7 +17,9 @@ const MailboxForm = ({addBox}) => {
         event.preventDefault();
 
        const  newState = addBox(formData);
-        setFormData(newState)
+        console.log('newState:', newState)
+        setFormData(newState);
+        setFormData(initialState)
         navigate('/mailboxes');
     };
 
